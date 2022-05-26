@@ -53,7 +53,7 @@ def createEdgeList(width, height):
                 edge_a = (x, y)
                 edge_b = (x, y + 1)
                 edge_list.append((edge_a, edge_b))
-    
+
     return edge_list
 
 def printGrid(grid):
@@ -75,7 +75,7 @@ def drawBoard(grid):
 '
 '
 '
-'       FUNÇÃO PRINCIPAL
+'       PRINCIPAL
 '
 '
 '
@@ -138,7 +138,7 @@ while running:
     #não terminou?
     if flag == False:
 
-        #monta uma peça do labirinto
+        #insere uma posição no labirinto (conecta dois quadrados do grid)
         edge = edge_list.pop(0)
         node_a, node_b = edge[0], edge[1]
         print("aresta:", edge)
